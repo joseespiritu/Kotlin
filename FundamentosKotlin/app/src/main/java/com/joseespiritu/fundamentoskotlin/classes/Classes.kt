@@ -7,5 +7,13 @@ fun main() {
     val phone: Phone = Phone(1234567)
     phone.call()
     phone.showNumber()
-    println(phone.number)
+    // println(phone.number)
+
+    newTopic("Herencia")
+    val smartphone = Smartphone(354421, true)
+    smartphone.call()
+
+    newTopic("Sobreescritura")
+    smartphone.showNumber()
+    println("Privado? ${smartphone.isPrivate}")
 }

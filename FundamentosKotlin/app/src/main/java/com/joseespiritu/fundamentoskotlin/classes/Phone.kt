@@ -1,11 +1,11 @@
 package com.joseespiritu.fundamentoskotlin.classes
 
-class Phone (val number: Int) {
+open class Phone (protected val number: Int) {
     fun call() {
         println("Llamando...")
     }
 
-    fun showNumber() {
+    open fun showNumber() {
         println("Mi número es: $number")
     }
 }
